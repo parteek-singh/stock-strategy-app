@@ -4,9 +4,19 @@ from models import StrategyRequest, BacktestResponse
 import pandas as pd
 from typing import List, Optional
 from datetime import datetime, timedelta
+from fastapi.middleware.cors import CORSMiddleware
 
 
 app = FastAPI()
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Or replace * with ["http://localhost:5173"]
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 INTERVAL_MAP = {
     "1h": "60m",
