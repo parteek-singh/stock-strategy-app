@@ -11,3 +11,10 @@ __pycache__/
 
 # OS files
 .DS_Store
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+stock-venv/
+.env
