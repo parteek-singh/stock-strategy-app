@@ -1,0 +1,8 @@
+setuptools>=42
+wheel
+fastapi
+uvicorn
+pandas==1.5.3
+numpy==1.23.5
+pandas-ta
+yfinance
