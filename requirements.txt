@@ -2,7 +2,7 @@ setuptools>=42
 wheel
 fastapi
 uvicorn
-pandas==1.5.3
-numpy==1.23.5
+pandas==2.2.2
+numpy==1.26.4
 pandas-ta
 yfinance
